@@ -1,3 +1,5 @@
+import CoreConcept from "./components/CoreConcept";
+import Examples from "./components/Examples";
 import Header from "./components/Header";
 
 function App() {
@@ -5,7 +7,16 @@ function App() {
     <div>
       <Header />
       <main>
-        <h2>Time to get started!</h2>
+        <section id="core-concepts">
+          <h2>Core Concepts</h2>
+          <CoreConcept />
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <Examples />
+          </menu>
+        </section>
       </main>
     </div>
   );

@@ -1,3 +1,5 @@
+const rectImg = "src/assets/react-core-concepts.png";
+
 function Header() {
   const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
@@ -5,13 +7,15 @@ function Header() {
     return Math.floor(Math.random() * (max + 1));
   }
 
+  const desc = reactDescriptions[genRandomInt(reactDescriptions.length)];
+
   return (
     <header>
-      <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+      <img src={rectImg} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
-        {reactDescriptions[genRandomInt(reactDescriptions.length)]} React
-        concepts you will need for almost any app you are going to build!
+        {desc} React concepts you will need for almost any app you are going to
+        build!
       </p>
     </header>
   );
