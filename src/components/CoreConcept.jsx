@@ -35,7 +35,7 @@ function CoreConcept() {
     <div className="core-concept">
       <ul>
         {CORE_CONCEPTS.map((concept) => (
-          <li>
+          <li key={concept}>
             <img src={concept.image} alt={concept.title} />
             <h2>{concept.title}</h2>
             <p>{concept.description}</p>
